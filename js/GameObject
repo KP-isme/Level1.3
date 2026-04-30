@@ -1,0 +1,42 @@
+// function GameObject (x,y,w,h,color) {
+//     //sets up the player's starting point
+//     // setting up x
+//     if (x==undefined)
+//     {
+//         this.x = canvas.width/2;
+//     }
+//     else 
+//     {
+//         this.x = x;
+//     }
+//     //Setting up y 
+//     if (y==undefined)
+//     {
+//         this.width = 100;
+//     }
+//     else
+//     {
+//         this.width = w;
+//     }
+//     //Setting up the height
+//     if (h==undefined)
+//     {
+//         this.height = 100;
+//     }
+//     else 
+//     {
+//         this.height = h
+//     }
+//     //setting up the width
+//     if (w == undefined)
+//     {
+//         this.width = 100;
+//     }
+//     else 
+//     {
+//         this.width = w;
+//     }
+
+
+// }
+
