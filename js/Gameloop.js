@@ -15,7 +15,7 @@ context = canvas.getContext("2d");
 
 // player = new GameObject(0,0,100,100, "#00ff00");
 player = new GameObject(50, canvas.height/2, 100, 100, "#ffff00");
-player.vx = 1;
+player.vx = 10;
 player.vy = 0;
 
 
@@ -90,28 +90,28 @@ function animate()
     }
 */ 
 
-    //all the things under would have made it bounce off walls and move (if you change the player.vx value)
+    // all the things under would have made it bounce off walls and move (if you change the player.vx value)
 
-    // if (player.x > canvas.width - player.width/2) 
-    // {
-    //     //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
-    //     player.vx = -0;
-    // }
-    // if (player.x < 0 + player.width/2) 
-    // {
-    //     //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
-    //     player.vx = 0;
-    // }
-    // if (player.y > canvas.height + player.hight/2) 
-    // {
-    //     //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
-    //     player.vy = 10;
-    // }
-    // if (player.y < 0 - player.height/2) 
-    // {
-    //     //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
-    //     player.vy = -10;
-    // }
+    if (player.x > canvas.width - player.width/2) 
+    {
+        //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
+        player.vx = -10;
+    }
+    if (player.x < 0 + player.width/2) 
+    {
+        //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
+        player.vx = 10;
+    }
+    if (player.y > canvas.height + player.hight/2) 
+    {
+        //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
+        player.vy = 10;
+    }
+    if (player.y < 0 - player.height/2) 
+    {
+        //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
+        player.vy = -10;
+    }
     player.drawCircle();
     npc1.drawCircle();
     npc2.drawCircle();
