@@ -16,7 +16,7 @@ context = canvas.getContext("2d");
 // player = new GameObject(0,0,100,100, "#00ff00");
 player = new GameObject(50, canvas.height/2, 100, 100, "#ffff00");
 player.vx = 10;
-player.vy = 0;
+player.vy = 10;
 
 
 
@@ -102,7 +102,7 @@ function animate()
         //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
         player.vx = 10;
     }
-    if (player.y > canvas.height + player.hight/2) 
+    if (player.y > 700 + player.hight/2) 
     {
         //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
         player.vy = 10;
