@@ -95,7 +95,7 @@ function animate()
     if (player.x > canvas.width - player.width/2) 
     {
         //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
-        player.vx = -10;
+        player.vx = -5;
         player.vy = -10;
     }
     if (player.x < 0 + player.width/2) 
@@ -107,13 +107,13 @@ function animate()
     {
         //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
         player.vy = -10;
-        player.vx = -10;
+        player.vx = -15;
     }
     if (player.y < 0 + player.height/2) 
     {
         //player.x = +player.width/2;  //whats this do? This make sure that all of the player is spawned behind the left side.
         player.vy = +10;
-        player.vx = -10;
+        player.vx = +5;
     }
     player.drawCircle();
     npc1.drawCircle();
